@@ -216,7 +216,7 @@
             let found = false;
 
             filas.forEach(tr => {
-                tr.classList.remove("highlight");
+                tr.classList.add("highlight");
                 const codigo = tr.children[2].textContent.toLowerCase();
                 if (codigo === input) {
                     tr.classList.add("highlight");
