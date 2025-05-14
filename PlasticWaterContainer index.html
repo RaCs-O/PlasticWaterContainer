@@ -216,11 +216,11 @@
             let found = false;
 
             filas.forEach(tr => {
-                row.classList.add("highlight");
+                tr.classList.remove("highlight");
                 const codigo = tr.children[2].textContent.toLowerCase();
                 if (codigo === input) {
-                    row.classList.add("highlight");
-                    row.scrollIntoView({ behavior: "smooth", block: "center" });
+                    tr.classList.add("highlight");
+                    tr.scrollIntoView({ behavior: "smooth", block: "center" });
                     found = true;
                 }
             });
