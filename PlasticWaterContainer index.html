@@ -219,8 +219,8 @@
                 row.classList.add("highlight");
                 const codigo = tr.children[2].textContent.toLowerCase();
                 if (codigo === input) {
-                    tr.classList.add("highlight");
-                    tr.scrollIntoView({ behavior: "smooth", block: "center" });
+                    row.classList.add("highlight");
+                    row.scrollIntoView({ behavior: "smooth", block: "center" });
                     found = true;
                 }
             });
